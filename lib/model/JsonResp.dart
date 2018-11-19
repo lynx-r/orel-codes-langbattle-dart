@@ -22,6 +22,10 @@ class JsonResp extends Serializable {
 
   @override
   void readFromMap(Map<String, dynamic> requestBody) {
-    // TODO: implement readFromMap
+    id = requestBody['id'] as String;
+    firstName = requestBody['first_name'] as String;
+    lastName = requestBody['last_name'] as String;
+    say = requestBody['say'] as String;
+    currentTime = DateTime.parse(requestBody['say'] as String);
   }
 }
