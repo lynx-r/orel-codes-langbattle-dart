@@ -6,7 +6,7 @@ class BattleController extends ResourceController {
     return Response.ok(JsonResp(
         jsonReq.id,
         "${jsonReq.firstName} ${md5.convert(utf8.encode(jsonReq.firstName))}",
-        "${jsonReq.lastName} ${md5.convert(utf8.encode(jsonReq.lastName)).toString()}",
+        "${jsonReq.lastName} ${md5.convert(utf8.encode(jsonReq.lastName))}",
         "Dart is the best",
         DateTime.now()));
   }
